@@ -1,0 +1,72 @@
+
+syntax = "proto3";
+
+package contest.ledger.v1;
+
+option java_multiple_files = true;
+option java_package = "lk.oc.trainledger.v1";
+
+// 1. Reveals structural characteristics.
+service TopologyService {
+  rpc DescribeStructure(ProblemRequest)
+      returns (TopologyReply);
+}
+
+// 2. Reveals limits and performance budget.
+service ConstraintService {
+  rpc GetConstraints(ProblemRequest)
+      returns (ConstraintReply);
+}
+
+// 3. Evaluates small contestant-generated cases.
+service OracleService {
+  rpc QuerySample(OracleRequest)
+      returns (OracleReply);
+}
+
+// 4. Returns limited algorithm feedback.
+service ValidationService {
+  rpc ValidateApproach(ValidationRequest)
+      returns (ValidationReply);
+}
+
+message ProblemRequest {
+  string problem_id = 1;
+}
+
+message TopologyReply {
+  string route_structure = 1;
+  string history_structure = 2;
+  bool branching_allowed = 3;
+  bool merging_allowed = 4;
+}
+
+message ConstraintReply {
+  int32 max_trains = 1;
+  int32 max_segments = 2;
+  int32 max_operations = 3;
+  int32 time_limit_ms = 4;
+  int32 memory_limit_mb = 5;
+}
+
+message OracleRequest {
+  string problem_id = 1;
+  string sample_input = 2;
+}
+
+message OracleReply {
+  string expected_output = 1;
+  int32 calls_remaining = 2;
+}
+
+message ValidationRequest {
+  string problem_id = 1;
+  string approach = 2;
+  string complexity = 3;
+}
+
+message ValidationReply {
+  string verdict = 1;
+  string feedback = 2;
+  int32 calls_remaining = 3;
+}
