@@ -1,3 +1,9 @@
+# Forked Reservation Ledger contest
+
+Contestants: start with **[contest setup and instructions](contest/README.md)**.
+You do not need to deploy the TrainTicket application below.
+
+---
 
 # Train Ticket：A Benchmark Microservice System
 # <img src="./image/logo.png">
