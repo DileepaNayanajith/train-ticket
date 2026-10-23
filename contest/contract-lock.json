@@ -12,11 +12,11 @@
   "contract_files": {
     "LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
     "NOTICE": "4b05f39493c1ddf7f75599ac97b63d1f7d437047506b8916682da85ea93edfd6",
-    "README.md": "e9e36ae44960b3d54f99f75d81d1f0936a3dafcd8afc719245a85319b6d93a1b",
+    "README.md": "b73a10864d24560bbd5cb4fe56d06fc8656b1f8d73b0ef20839ff6a2910714e6",
     "docs/service-investigation.md": "82fad1db6fc12a3ad0d87801c8eef63ea3376b88c0bcb8339d37bc33dd48c891",
     "docs/services.md": "9f18fa9d1a43af1776ae23c9d640f98437b7e898fbf6df2b79f968ffc4e1d104",
     "proto/challenge.proto": "7b102e26410a4bf538d3cb04a68f81cd89b2eea65e8f31730185af728bc220dc",
-    "starter/Solution.java": "f319b43a8e9567bd3a6249809c6899e5a03493c994019a008dfda041397293b6",
+    "starter/Solution.java": "8da1cc240349142fdee49b0e674f3308cb3c6e1228020d0e8f2f580069e31745",
     "train-ledger-ca.crt": "c1b551c4b43f7ed90a725efea39a856098216fddef5a1f6c427d60d1d6b894c5"
   }
 }

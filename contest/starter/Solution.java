@@ -1,6 +1,6 @@
 import java.io.*;
 
-/** Java 17 contestant starter. Input parsing only; implement solve(). */
+/** Java 15 contestant starter. Input parsing only; implement solve(). */
 public class Solution {
     static final class TrainInput {
         String name;

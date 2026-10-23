@@ -5,7 +5,7 @@ Setup and service access for contestants. The problem statement, samples and sub
 ## Setup
 
 - Connect to the contestant university Wi-Fi/LAN. Internet access is also needed for HackerRank.
-- Install a Java 17 JDK and `grpcurl` for your OS:
+- Install a Java 15 JDK and `grpcurl` for your OS:
 
   | OS | grpcurl setup |
   |---|---|
